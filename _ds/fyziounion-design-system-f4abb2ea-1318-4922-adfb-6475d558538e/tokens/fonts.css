@@ -1,0 +1,12 @@
+/* ============================================================
+   FyzioUnion — webfonts
+   Loaded from CDN (Fontshare + Google Fonts). No self-hosted
+   binaries are shipped; consumers fetch from the network.
+   - Cabinet Grotesk — display / headings (therapist web)
+   - Switzer        — body (therapist web)
+   - Inter          — body (patient app)
+   - Roboto Mono    — numeric / labels (patient app)
+   @import rules must precede all other rules in this file.
+   ============================================================ */
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500&display=swap");

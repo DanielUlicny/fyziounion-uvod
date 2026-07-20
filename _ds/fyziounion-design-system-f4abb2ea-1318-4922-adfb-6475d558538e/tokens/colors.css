@@ -1,0 +1,57 @@
+/* ============================================================
+   FyzioUnion — Color tokens
+   Cool, clinical blue + slate, neutral greys, calm status hues.
+   Base values use the --fz-* prefix; semantic aliases (--accent,
+   --ink, --surface, --ok …) are what components reference.
+   ============================================================ */
+:root {
+  /* ---- Brand ------------------------------------------------ */
+  --fz-navy: #1c3f6e;        /* deep brand surface: sidebar, hero cards, logo bg */
+  --fz-navy-deep: #141b34;   /* darkest navy — gradient floor on hero/login */
+  --fz-blue: #2563b8;        /* primary action (therapist web) */
+  --fz-blue-hover: #1e4f94;
+  --fz-blue-press: #1a4480;
+  --fz-blue-deep: #15396b;   /* colored display headings (body stays dark) */
+  --fz-blue-soft: #e8f0fb;   /* tint fill */
+  --fz-blue-soft-2: #cfe0f6; /* tint border / hover */
+  --fz-slate: #455a74;       /* patient-app accent (softer, calmer) */
+  --fz-slate-ink: #38495e;
+
+  /* ---- Semantic accent (defaults to brand blue) ------------- */
+  --accent: var(--fz-blue);
+  --accent-hover: var(--fz-blue-hover);
+  --accent-press: var(--fz-blue-press);
+  --accent-deep: var(--fz-blue-deep);
+  --accent-tint: var(--fz-blue-soft);
+  --accent-tint-2: var(--fz-blue-soft-2);
+  --accent-text: var(--fz-blue);
+  --accent-shadow: rgba(37, 99, 184, 0.18);
+
+  /* ---- Ink / neutral text (cool greys, never pure black) ---- */
+  --ink: #1a2333;
+  --ink-soft: #3a4756;
+  --muted: #64757d;
+  --faint: #95a3ac;
+
+  /* ---- Surfaces --------------------------------------------- */
+  --bg: #f7f9fa;             /* page background */
+  --surface: #ffffff;        /* cards, sheets, menus */
+  --raise: #eef2f5;          /* hover fill */
+  --raise-2: #e3e9ed;        /* pressed / heavier fill */
+  --field: #f2f5f7;          /* input background */
+  --chip: #f2f4f9;           /* chip / pill background */
+
+  /* ---- Lines ------------------------------------------------ */
+  --border: #e2e8eb;
+  --border-2: #d3dbe0;
+  --line: #eaecf2;           /* lighter hairline (patient app) */
+
+  /* ---- Status ----------------------------------------------- */
+  --ok: #1f9d6b;  --ok-tint: #e6f4ee;  --ok-text: #157a52;  --ok-line: #cdeadb;
+  --warn: #e0a500; --warn-tint: #fbf1d8; --warn-text: #8a6600;
+  --danger: #dc4b4b; --danger-tint: #fbeaea; --danger-text: #b23a3a;
+
+  /* ---- Rings / nav (patient app) ---------------------------- */
+  --ring-track: #eceef4;
+  --nav-idle: #a3a9bb;
+}
